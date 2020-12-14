@@ -45,14 +45,15 @@ body {
 }
 .header__text-box {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  text-align: center;
+  backface-visibility: hidden;
 }
 
 .heading-primary__main {
@@ -60,6 +61,7 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+  animation: moveInLeft 2s ease-out;
 }
 
 .heading-primary__sub {
@@ -67,4 +69,33 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.4px;
+  animation: moveInRight 2s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
