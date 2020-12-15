@@ -14,8 +14,8 @@ Dark green: #28b485
 }
 
 html {
-  /* resetting font-size */
-  font-size: 10px;
+  /* resetting browser root font-size to 10*/
+  font-size: 62.5%;
 }
 
 body {
