@@ -11,14 +11,17 @@ html {
   /* resetting browser root font-size 16px to 1rem*/
   font-size: 62.5%; // 1 rem = 10px
 
-  @include respond(tab-port) {
-    font-size: 50%; // 1rem = 8px
-  }
-
+  // width < 1200?
   @include respond(tab-land) {
     font-size: 56.25%; // 1rem = 9px
   }
 
+  // width < 900?
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  // width > 1800?
   @include respond(big-desktop) {
     font-size: 75%; // 1rem = 12
   }
