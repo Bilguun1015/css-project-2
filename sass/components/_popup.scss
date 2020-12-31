@@ -28,11 +28,11 @@
   }
 
   &__left {
-    // width: 33.333333%;
+    width: 33.333333%;
     display: table-cell;
 
     @include respond(tab-land) {
-      display: block;
+      width: 100%;
     }
 
     @include respond(tab-port) {
@@ -57,9 +57,10 @@
     width: 100%;
 
     @include respond(tab-land) {
-      float: left;
+      display: inline-block;
       width: 50%;
       height: 28rem;
+      float: left;
     }
   }
 
