@@ -29,9 +29,9 @@
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
 
-    @include respond(tab-land) {
-      display: block;
-    }
+    // @include respond(tab-land) {
+    //   display: block;
+    // }
   }
 
   &__left {
@@ -55,8 +55,7 @@
     padding: 3rem 5rem 3rem 5rem;
 
     @include respond(tab-land) {
-      display: block;
-
+      display: inline-block;
       width: 100%;
     }
   }
