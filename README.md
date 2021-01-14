@@ -1,4 +1,4 @@
-# Complete SCSS/CSS project to deepen understanding of SCSS and CSS
+# Landing Page for a tour company
 
 This project is a UI project, and I used only HTML and CSS. The final project is hosted on Netlify [HERE](https://pure-css-project.netlify.app/).
 
