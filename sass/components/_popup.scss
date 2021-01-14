@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-color: rgba($color-black, 0.8);
-  z-index: 5000;
+  z-index: -2;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
@@ -93,6 +93,7 @@
   &:target {
     opacity: 1;
     visibility: visible;
+    z-index: 5000;
   }
   // Open states
   &:target &__content {
